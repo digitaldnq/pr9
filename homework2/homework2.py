@@ -1,13 +1,13 @@
 def intInput(s1):
     while True:
         try:
-            return int(input(s1))
+            return float(input(s1))
         except ValueError:
             print("Некорректный ввод, введите целое число.")
 
 def squaresBetween(a, b):
-    start = min(a, b) + 1
-    end = max(a, b)
+    start = int(min(a, b)) + 1
+    end = int(max(a, b)) + 1
     squares = [i**2 for i in range(start, end)]
     return squares
 
